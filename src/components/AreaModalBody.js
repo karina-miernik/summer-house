@@ -1,10 +1,5 @@
-import React, { useState } from 'react';
-import AreaModalBody from './AreaModalBody';
-import SectionTitle from './SectionTitle';
-import { BsChevronRight } from 'react-icons/bs';
-import { BsChevronLeft } from 'react-icons/bs';
-export default function Area() {
-  const [modal, setModal] = useState(NaN);
+import React from 'react';
+export default function AreaModalBody({ index, handleOnNext }) {
   const activities = [
     {
       text: 'Zbiornik posiada 5 wysp, których największa ma powierzchnię około 4ha. Dno jest muliste, miejscami piaszczyste i kamienisto-piaszczyste. W płytkich partiach wody zarośnięte roślinnością. Jezioro jest dobrze dostępne praktycznie ze wszystkich stron. Bardzo dobry dostęp w okolicznych miejscowościach: Wikno, Jabłonka, Natać Wielka, Natać Mała. Brzegi są wysokie, miejscami niskie i płaskie. Najbliższe otoczenie to lasy iglaste i zabudowania okolicznych miejscowości. Bezpośrednio nad brzegami dominuje olcha z niewielkim udziałem brzozy i wierzby. Wokół brzegów, pas roślinności szuwarowej o szerokości od kilku do kilkunastu metrów. Dominuje trzcina oraz pałka wąskolistna i szerokolistna. Występuje tu leszcz, krąp, ukleja oraz inne gatunki ryb w mniejszym stopniu.',
@@ -31,100 +26,47 @@ export default function Area() {
         'sport.jpeg'
     }
   ];
-  const handleBtnNext = () => {
-    if (modal === 0) setModal(1);
-    else if (modal === 1) setModal(2);
-    else if (modal === 2) setModal(3);
-    else if (modal === 3) setModal(0);
-    else setModal(NaN);
-  };
-  const handleBtnPrev = () => {
-    if (modal === 0) setModal(3);
-    else if (modal === 1) setModal(0);
-    else if (modal === 2) setModal(1);
-    else if (modal === 3) setModal(2);
-    else setModal(NaN);
-  };
   return (
-    <div class="w-[90%] min-h-[90vh] mx-auto my-28 flex flex-col">
-      <SectionTitle text="Poznaj okolicę" />
-      <div class="flex flex-col md:flex-row flex-wrap w-full justify-center items-center gap-1 mt-16">
-        {activities.map((activity, index) => {
-          return (
-            <>
-              <div
-                type="button"
-                class="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-                key={index}
-              >
-                <div
-                  class="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
-                  style={{ backgroundPosition: '50%' }}
-                >
-                  <img class="max-w-lg h-full" src={activity.image} alt="activity" />
-                  <div
-                    onClick={(e) => setModal(index)}
-                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/30  hover:bg-black/60 transition duration-300 ease-in-out">
-                    <div
-                      id={`activity${index}`}
-                      class="cursor-pointer group flex flex-col  justify-center items-c enter h-full first-letter"
-                    >
-                      <p class="relative text-white font-bold uppercase font-lato tracking-widest text-[30px] text-center justify-center mb-0 flex">
-                        {activity.title}
-                      </p>
+    <>
+        <div class="flex flex-col w-[90%] m-auto h-full">
+        <div className="uppercase font-lato font-light tracking-widest flex flex-row w-full text-[42px] h-[10%] text-center justify-center mb-16">
+            {index === 0
+              ? activities[0].title
+              : index === 1
+              ? activities[1].title
+              : index === 2
+              ? activities[2].title
+              : index === 3
+              ? activities[3].title
+              : ''}
+          </div>
+          <div class="flex flex-row h-[90%] gap-16">
+          <div class="flex flex-col w-1/2 m-auto" data-interval="false">
+            <div class="w-full overflow-hidden">
+              {activities.map((activity, i) => {
+                return (
+                  <>
+                    <div id={i} class={`carousel-item ${i === index ? 'active' : ''} relative float-left w-full`}>
+                      <img src={activity.image} class="block w-full" alt="..." />
                     </div>
-                  </div>
-                </div>
-              </div>
-            </>
-          );
-        })}
-        <div
-          class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog relative w-auto pointer-events-none max-w-[100vw] m-0 min-h-[100vh]">
-            <div class="modal-content min-h-[100vh] border-none shadow-lg relative flex flex-col h-full w-full pointer-events-auto bg-white bg-clip-padding  outline-none text-current">
-              <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 ">
-                <h5 class="text-xl font-medium leading-normal text-gray-800">
-
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onClick={() => setModal(NaN)}
-                ></button>
-              </div>
-              <div class="modal-body relative p-4 flex flex-row justify-around flex-wrap w-full items-center">
-                <div
-                  class="text-[30px] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
-                  type="button"
-                  onClick={handleBtnPrev}
-                >
-                  <BsChevronLeft />
-                </div>
-                <AreaModalBody index={modal} />
-                <div
-                  class="text-[30px] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
-                  type="button"
-                  onClick={handleBtnNext}
-                >
-                  <BsChevronRight />
-                </div>
-              </div>
+                  </>
+                );
+              })}
             </div>
           </div>
+          <div className="flex flex-col w-1/2 m-auto text-lg font-lato font-light">
+            {index === 0
+              ? activities[0].text
+              : index === 1
+              ? activities[1].text
+              : index === 2
+              ? activities[2].text
+              : index === 3
+              ? activities[3].text
+              : ''}
+          </div>
+          </div>
         </div>
-      </div>
-    </div>
+    </>
   );
 }

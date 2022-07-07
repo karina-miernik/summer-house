@@ -12,7 +12,7 @@ export default function Contact() {
       <SectionTitle text="Skontaktuj się z nami!" />
       <div className="w-[90%] m-auto flex flex-row md:flex-row flex-wrap justify-around items-center mt-16 gap-8 lg:gap-0 mb-4">
         <div class="font-lato font-light flex flex-col justify-start w-full md:w-1/2 lg:w-[25%] gap-4">
-          <span class="flex gap-4 items-center hover:text-teal-800 transition duration-300 ease-in-out">
+          <span class="flex gap-4 items-center hover:text-teal-800  transition duration-300 ease-in-out">
             <BsTelephoneFill /> +48 608 458 768
           </span>
           <span class="flex gap-4 items-center hover:text-teal-800 transition duration-300 ease-in-out">
@@ -35,7 +35,10 @@ export default function Contact() {
 
     </div>
 
-      <div class="bg-teal-800 text-teal-500/60 font-lato text-base m-auto italic h-[10vh] bottom-0 w-full text-center flex justify-center items-center">Copyright 2022</div>
+      <div class="bg-teal-800 text-c-blue-1 font-lato text-base m-auto italic h-[10vh] bottom-0 w-full text-center flex  flex-col justify-center items-center">
+        <p>Copyright {new Date().getFullYear()}</p>
+        <p>by Karina Miernik</p>
+      </div>
     </>
   );
 }

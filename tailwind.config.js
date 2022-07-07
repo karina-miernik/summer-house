@@ -16,9 +16,11 @@ module.exports = {
         'vol': ['Vollkorn', 'serif'],
         'lato': ['Lato', 'serif']
       },
-      color : {
+      colors : {
         'c-gray-1': '#343434',
-        'c-gray-2': '#767676'
+        'c-gray-2': '#767676',
+        'c-blue-1': '#C7F8FF',
+        'c-purple-1': '#B884B2'
       },
       backgroundColor: {
         'custom': '#767676'
@@ -26,6 +28,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
   ],
 }

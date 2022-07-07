@@ -10,7 +10,7 @@ import {GiPillow} from 'react-icons/gi'
 import {GiSittingDog} from 'react-icons/gi'
 export default function Services  (props) {
   return (
-    <div class="w-[60%] h-[90vh] mx-auto my-26 flex flex-col">
+    <div class="w-[90%] md:w-[60%] md:h-[90vh] mx-auto my-26 flex flex-col break-words">
       <SectionTitle text="Udogodnienia"/>
       <div class="flex flex-row flex-wrap w-full h-auto gap-8 items-start text-center justify-center md:flex-row mt-16 mb-8">
         <div class="font-lato  flex flex-col  text-[20px] font-light w-[30%] lg:w-[25%] ">
