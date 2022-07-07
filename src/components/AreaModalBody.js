@@ -46,7 +46,7 @@ export default function AreaModalBody({ index, handleOnNext }) {
               {activities.map((activity, i) => {
                 return (
                   <>
-                    <div id={i} class={`carousel-item ${i === index ? 'active' : ''} relative float-left w-full`}>
+                    <div key={i} id={i} class={`carousel-item ${i === index ? 'active' : ''} relative float-left w-full`}>
                       <img src={activity.image} class="block w-full" alt="..." />
                     </div>
                   </>
