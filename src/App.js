@@ -1,9 +1,8 @@
 import React from 'react';
 import Area from './components/Area';
 import Contact from './components/Contact';
-import Home from './components/Home';
 import About from './components/About';
-import House from './components/House';
+import Offer from './components/Offer';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
 import Carousel from './components/Carousel';
@@ -25,8 +24,8 @@ function App() {
         <div id="services">
           <Services />
         </div>
-        <div id="house">
-          <House />
+        <div id="offer">
+          <Offer />
         </div>
       
         <div id="gallery">
