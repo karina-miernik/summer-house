@@ -1,5 +1,7 @@
 import React from 'react';
 import ArrowDown from './ArrowDown';
+import { Link } from 'react-scroll';
+
 export default function Carousel() {
   const heros = [
     {
@@ -7,11 +9,11 @@ export default function Carousel() {
       alt: 'hero1'
     },
     {
-      img: 'https://images.unsplash.com/photo-1520819716183-631708b900aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90aby1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3380&q=80',
+      img: 'https://images.unsplash.com/uploads/1412259799414a71445bd/f7a44cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1669&q=80',
       alt: 'hero2'
     },
     {
-      img: 'https://images.unsplash.com/photo-1508041811615-4ee369a24c2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3380&q=80',
+      img: 'https://images.unsplash.com/photo-1498176126716-a01bc267f662?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3380&q=80',
       alt: 'hero3'
     }
   ];
@@ -31,20 +33,54 @@ export default function Carousel() {
 
       <div class="carousel-inner relative w-full overflow-hidden">
         {heros.map((hero, index) => {
-          return (<div class={`carousel-item ${index === 0 ? 'active' : ''} relative float-left w-full`}>
-            <img src={hero.img} class="block w-full h-screen object-cover md:object-fill" alt={hero.alt} />
-            <div
-              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-              style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}
-            ></div>
-            <div class="carousel-caption block absolute top-[30%] text-center">
-              <p class="uppercase text-2xl md:text-[70px] md:leading-[72px] font-vol font-bold tracking-wider text-white mb-8">
-                Domek z Widokiem
-              </p>
-              <p class="font-lato text-lg md:text-3xl font-normal md:font-light text-white mb-16">Jabłonka 84, 13-100 Nidzica</p>
-              <ArrowDown />
+          return (
+            <div class={`carousel-item ${index === 0 ? 'active' : ''} relative float-left w-full`}>
+              <img src={hero.img} class="block w-full h-screen object-cover md:object-fill" alt={hero.alt} />
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                style={{ backgroundColor: 'rgba(0,0,0,0.35)' }}
+              ></div>
+              <div class="carousel-caption flex flex-col justify-evenly absolute top-[10%] text-center">
+                <div>
+                  <p class="uppercase text-2xl md:text-[70px] md:leading-[72px] font-vol font-bold tracking-wider text-white mb-8">
+                    Domek z Widokiem
+                  </p>
+                  <p class="font-lato text-lg md:text-3xl font-normal md:font-light text-white mb-16">
+                    Jabłonka 84, 13-100 Nidzica
+                  </p>
+                  <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-90} duration={500}>
+                    <button
+                      type="submit"
+                      class="w-fit flex justify-center
+                px-4
+                py-4
+                m-auto
+                bg-c-blue-1
+                text-white
+                font-lato
+                items-end
+                tracking-[3px]
+                font-medium
+                text-xs md:text-lg
+                leading-tight
+                uppercase
+                rounded
+                shadow-md
+                hover:bg-c-blue-2 hover:shadow-lg
+                focus:bg-c-blue-2 focus:shadow-lg focus:outline-none focus:ring-0
+                active:bg-c-blue-2 active:shadow-lg
+                transition
+                duration-300
+                ease-in-out"
+                    >
+                      Napisz do nas!
+                    </button>
+                  </Link>
+                </div>
+                <ArrowDown />
+              </div>
             </div>
-          </div>);
+          );
         })}
       </div>
       <button

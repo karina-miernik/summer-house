@@ -22,29 +22,29 @@ export default function Header() {
   return (
     <div
       class={`${
-        scrollTop ? 'bg-teal-900/90 shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
-      } h-[10vh] flex flex-row w-full text-white fixed top-0 z-30 uppercase justify-end py-4`}
+        scrollTop ? 'bg-c-blue-4  shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
+      } h-[10vh] flex flex-row w-full  text-white transition duration-100 ease-in-out fixed top-0 z-30 uppercase justify-end py-4`}
     >
-      <ul class="font-lato hidden md:flex tracking-wider text-base md:text-xl items-center w-[80%] justify-around">
+      <ul class="hidden md:flex tracking-wider capitalize font-lato text-base items-center w-[80%] justify-around">
         <Links />
       </ul>
 
       <div className="flex md:hidden items-center">
         <div
-          className="space-y-2 px-4 py-0"
+          className="space-y-2 px-4 py-0 cursor-pointer"
           onClick={() => setIsNavOpen((prev) => !prev)} 
         >
-          <span className="block h-0.5 w-8 bg-blue-200"></span>
-          <span className="block h-0.5 w-8 bg-blue-200"></span>
-          <span className="block h-0.5 w-8 bg-blue-200"></span>
+          <span className="block h-0.5 w-8 bg-white"></span>
+          <span className="block h-0.5 w-8 bg-white"></span>
+          <span className="block h-0.5 w-8 bg-white"></span>
         </div>
 
         <div
           className={
-            isNavOpen ? 'flex absolute left-0 top-0 h-screen w-screen bg-teal-900/90 flex-col items-center' : 'hidden'
+            isNavOpen ? 'flex absolute left-0 top-0 h-screen w-screen bg-c-blue-4 flex-col items-center' : 'hidden'
           }
         >
-          <div className="absolute top-0 right-0 p-4" onClick={() => setIsNavOpen(false)}>
+          <div className="absolute top-0 right-0 p-4 cursor-pointer" onClick={() => setIsNavOpen(false)}>
             <svg
               className="h-8 w-8 text-white"
               viewBox="0 0 24 24"
@@ -58,7 +58,7 @@ export default function Header() {
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </div>
-          <ul className="h-full w-full text-white flex flex-col items-center justify-center gap-4">
+          <ul className="h-full w-full text-white capitalize font-lato text-xl md:text-base flex flex-col items-center justify-center gap-4">
             <Links handleOnClose={() => setIsNavOpen(false)}/>
           </ul>
         </div>

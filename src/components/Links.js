@@ -4,9 +4,8 @@ import { Link } from 'react-scroll';
 export default function Links  ({handleOnClose}) {
   return (
     <>
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="home"
             spy={true}
@@ -18,9 +17,8 @@ export default function Links  ({handleOnClose}) {
             Strona Główna
           </Link>
         </li>
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="about"
             spy={true}
@@ -32,9 +30,8 @@ export default function Links  ({handleOnClose}) {
             O nas
           </Link>
         </li>
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="services"
             spy={true}
@@ -46,9 +43,8 @@ export default function Links  ({handleOnClose}) {
             Udogodnienia
           </Link>
         </li>
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="offer"
             spy={true}
@@ -61,9 +57,8 @@ export default function Links  ({handleOnClose}) {
           </Link>
         </li>
 
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="gallery"
             spy={true}
@@ -75,9 +70,8 @@ export default function Links  ({handleOnClose}) {
             Galeria
           </Link>
         </li>
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="area"
             spy={true}
@@ -89,9 +83,8 @@ export default function Links  ({handleOnClose}) {
             Okolica
           </Link>
         </li>
-        <li class="cursor-pointer">
+        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
           <Link
-            class=" transition ease-in-out duration-300"
             activeClass="active"
             to="contact"
             spy={true}

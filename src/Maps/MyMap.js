@@ -3,10 +3,11 @@ import { Map, Marker, ZoomControl } from 'pigeon-maps';
 const lat = 53.49962
 const long = 20.56792
 export default function MyMap() {
-  const [hue, setHue] = useState(0);
-  const color = `hsl(${hue % 360}deg 39% 70%)`;
+  const [opacity, setOpacity] = useState(1);
+  const color = `rgba(226, 147, 143, ${opacity})`;
   const [center, setCenter] = useState([lat, long ]);
   const [zoom, setZoom] = useState(12);
+ 
   return (
     <Map
       // height={1000}
@@ -18,7 +19,7 @@ export default function MyMap() {
       }}
     >
        <ZoomControl />
-      <Marker width={50} anchor={[lat, long]} color={color} onClick={() => setHue(hue + 20)} />
+      <Marker width={50} anchor={[lat, long]} color={color} onClick={() => setOpacity(opacity - 0.2)} />
     </Map>
   );
 }

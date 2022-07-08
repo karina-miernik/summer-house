@@ -9,7 +9,7 @@ export default function Offer() {
         style={{ backgroundImage: "url('offer.jpeg')" }}
       >
         <div class="bg-white text-black p-4 md:p-8 w-[80%] md:w-[60%] flex flex-col text-[14px] md:text-base justify-center items-center m-auto">
-          <div class="border-t-2 border-teal-800 w-[10%] m-0"></div>
+          <div class="border-t-2 border-c-blue-1 w-[10%] m-0"></div>
           <SectionTitle text="Oferta" />
           <div id="carouselDarkVariant" class="carousel slide relative  carousel-dark" data-bs-ride="carousel">
             <div class="carousel-indicators relative right-0 bottom-0 left-0 flex justify-center p-0 mb-4">

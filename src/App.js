@@ -34,7 +34,7 @@ function App() {
         <div id="area">
           <Area />
         </div>
-        <div id="contact" class="bg-[#eaecea]">
+        <div id="contact" class="bg-c-green-3">
           <Contact />
         </div>
         <div>

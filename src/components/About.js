@@ -9,7 +9,7 @@ export default function About(props) {
         style={{ backgroundImage: "url('about-1.jpeg')" }}
       >
         <div class="bg-white text-black p-4 md:p-8 w-[80%] md:w-[60%] m-auto flex flex-col text-[14px] md:text-base">
-          <div class="border-t-2 border-teal-800 w-[10%] m-auto"></div>
+          <div class="border-t-2 border-c-blue-1 w-[10%] m-auto"></div>
           <SectionTitle text="O nas" />
           Domek położony jest nad jeziorem Omulew na terenie puszczy Napiwodzko-Ramuckiej, na działce o powierzchni 9
           ar w cichej okolicy (kolonia). Położony jest na skraju miejscowości Jabłonka, której historia sięga XV wieku. 

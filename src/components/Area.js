@@ -63,7 +63,7 @@ export default function Area() {
                   class="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
                   style={{ backgroundPosition: '50%' }}
                 >
-                  <img class="max-w-lg h-full" src={activity.image} alt="activity" />
+                  <img class="max-w-[280px] md:max-w-lg h-full" src={activity.image} alt="activity" />
                   <div
                     onClick={(e) => setModal(index)}
                     class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/30  hover:bg-black/60 transition duration-300 ease-in-out">
@@ -71,7 +71,7 @@ export default function Area() {
                       id={`activity${index}`}
                       class="cursor-pointer group flex flex-col  justify-center items-c enter h-full first-letter"
                     >
-                      <p class="relative text-white font-bold uppercase font-lato tracking-widest text-[30px] text-center justify-center mb-0 flex">
+                      <p class="relative text-white font-bold uppercase font-lato tracking-widest text-2xl md:text-[30px] text-center justify-center mb-0 flex">
                         {activity.title}
                       </p>
                     </div>
@@ -90,7 +90,7 @@ export default function Area() {
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog relative w-auto pointer-events-none max-w-[100vw] m-0 min-h-[100vh]">
+          <div class="modal-dialog relative w-auto pointer-events-none min-w-[100vw] m-0 min-h-[100vh]">
             <div class="modal-content min-h-[100vh] border-none shadow-lg relative flex flex-col h-full w-full pointer-events-auto bg-white bg-clip-padding  outline-none text-current">
               <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 ">
                 <h5 class="text-xl font-medium leading-normal text-gray-800">
@@ -106,7 +106,7 @@ export default function Area() {
               </div>
               <div class="modal-body relative p-4 flex flex-row justify-around flex-wrap w-full items-center">
                 <div
-                  class="text-[30px] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
+                  class="text-[30px] fixed top-[50%] left-0 cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline transition duration-300 ease-in-out"
                   type="button"
                   onClick={handleBtnPrev}
                 >
@@ -114,7 +114,7 @@ export default function Area() {
                 </div>
                 <AreaModalBody index={modal} />
                 <div
-                  class="text-[30px] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
+                  class="text-[30px] fixed top-[50%] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
                   type="button"
                   onClick={handleBtnNext}
                 >

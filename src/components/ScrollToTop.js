@@ -27,7 +27,7 @@ export default function ScrollToTop() {
           data-mdb-ripple-color="light"
           class={`${
             scrollTop ? 'block opacity-100 transition duration-500 ease-in-out' : 'hidden opacity-0'
-          } p-3 bg-c-purple-1 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-teal-700 hover:shadow-lg focus:bg-teal-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-900 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed`}
+          } p-3 bg-c-blue-2 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-c-blue-1 hover:shadow-lg focus:bg-c-blue-2 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-c-blue-3 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed`}
           id="btn-back-to-top"
         >
           <svg
