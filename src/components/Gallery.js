@@ -66,32 +66,32 @@ export default function Gallery() {
               aria-labelledby="staticBackdropLabel1"
               aria-hidden="true"
             >
-              <div class="modal-dialog relative w-auto pointer-events-none max-w-[100vw] m-0 h-[100vh]">
-                <div class="modal-content border-none shadow-lg relative flex flex-col h-full w-full pointer-events-auto bg-white bg-clip-padding  outline-none text-current">
+              <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none min-w-[100vw] m-0">
+                <div class="modal-content border-none shadow-lg relative flex flex-col h-full w-full pointer-events-auto bg-clip-padding  outline-none text-current">
                   <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 ">
-                    <button
+                    {/* <button
                       type="button"
-                      class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                      class="btn-close box-content w-4 h-4 p-1 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                       onClick={() => setModal(NaN)}
-                    ></button>
+                    ></button> */}
                   </div>
                   <div class="modal-body relative p-4 flex flex-row justify-around flex-wrap items-center m-auto w-[90%] ">
                     <div
-                      class="text-[30px] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
+                      class="text-[30px] fixed top-[50%] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline left-0 transition duration-300 ease-in-out"
                       type="button"
                       onClick={handleBtnPrev}
                     >
-                      <BsChevronLeft />
+                      <BsChevronLeft color="white" />
                     </div>
                     <GalleryModal index={modal} />
                     <div
-                      class="text-[30px] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
+                      class="text-[30px] fixed top-[50%] cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline right-0 transition duration-300 ease-in-out"
                       type="button"
                       onClick={handleBtnNext}
                     >
-                      <BsChevronRight />
+                      <BsChevronRight color="white" />
                     </div>
                   </div>
                 </div>
