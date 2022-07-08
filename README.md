@@ -1,3 +1,3 @@
-# Holiday house website (portfolio)
+## Holiday house webpage (portfolio) (made in Polish )
 
 https://domekzwidokiem.netlify.app/
