@@ -33,7 +33,7 @@ export default function GalleryModal({ index, handleOnNext }) {
       <div class="flex flex-col w-[80%] md:w-[90%] m-auto h-full relative">
         <button
           type="button"
-          class="absolute top-[-3%] z-5 right-[-1%] bg-white rounded-full btn-close box-content bg-[length:30%] w-3 h-3 p-1 text-white border-none opacity-100 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-95 hover:no-underline"
+          class="absolute top-[-2%] z-10 right-[-1%] bg-white rounded-full btn-close box-content bg-[length:30%] w-3 h-3 p-1 text-white border-none opacity-100 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-95 hover:no-underline"
           data-bs-dismiss="modal"
           aria-label="Close"
           onClick={() => setModal(NaN)}
@@ -45,7 +45,7 @@ export default function GalleryModal({ index, handleOnNext }) {
                 return (
                   <>
                     <div id={i} class={`carousel-item ${i === index ? 'active' : ''} relative float-left w-full`}>
-                      <img src={gallery.image} class="block w-full max-h-[700px] object-contain" alt="..." />
+                      <img src={gallery.image} class="block w-full max-h-[700px] object-cover" alt="..." />
                     </div>
                   </>
                 );
