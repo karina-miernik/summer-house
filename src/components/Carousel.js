@@ -45,7 +45,7 @@ export default function Carousel() {
                   <p class="uppercase text-2xl md:text-[70px] md:leading-[72px] font-vol font-bold tracking-wider text-white mb-8">
                     Domek z Widokiem
                   </p>
-                  <p class="font-lato text-lg md:text-3xl font-normal md:font-light text-white mb-16">
+                  <p class="font-lato text-lg md:text-[32px] font-normal md:font-light text-white mb-16">
                     Jabłonka 84, 13-100 Nidzica
                   </p>
                   <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-90} duration={500}>

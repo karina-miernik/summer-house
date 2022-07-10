@@ -89,7 +89,7 @@ export default function Area() {
           <div class="modal-dialog relative w-auto pointer-events-none min-w-[100vw] m-0 min-h-[100vh]">
             <div class="modal-content min-h-[100vh] border-none shadow-lg relative flex flex-col h-full w-full pointer-events-auto bg-white bg-clip-padding  outline-none text-current">
               <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 ">
-                <h5 class="text-xl font-medium leading-normal text-gray-800">
+                <h5 class="text-[32px]l font-medium leading-normal text-gray-800">
 
                 </h5>
                 <button
