@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 export default function Carousel() {
   const heros = [
     {
-      img: 'https://images.unsplash.com/photo-1533757879476-8f4a3cb1ae4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3380&q=80',
+      img: 'landing.jpg',
       alt: 'hero1'
     },
     {
@@ -13,7 +13,7 @@ export default function Carousel() {
       alt: 'hero2'
     },
     {
-      img: 'https://images.unsplash.com/photo-1498176126716-a01bc267f662?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3380&q=80',
+      img: 'lake.jpg',
       alt: 'hero3'
     }
   ];
@@ -38,7 +38,7 @@ export default function Carousel() {
               <img src={hero.img} class="block w-full h-screen object-cover md:object-fill" alt={hero.alt} />
               <div
                 class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-                style={{ backgroundColor: 'rgba(0,0,0,0.35)' }}
+                style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}
               ></div>
               <div class="carousel-caption flex flex-col justify-evenly absolute top-[10%] text-center">
                 <div>
@@ -55,7 +55,7 @@ export default function Carousel() {
                 px-4
                 py-4
                 m-auto
-                bg-c-blue-1
+                bg-c-primary
                 text-white
                 font-lato
                 items-end
@@ -64,11 +64,10 @@ export default function Carousel() {
                 text-xs md:text-lg
                 leading-tight
                 uppercase
-                rounded
                 shadow-md
-                hover:bg-c-blue-2 hover:shadow-lg
-                focus:bg-c-blue-2 focus:shadow-lg focus:outline-none focus:ring-0
-                active:bg-c-blue-2 active:shadow-lg
+                hover:bg-c-secondary hover:shadow-lg
+                focus:bg-c-secondary focus:shadow-lg focus:outline-none focus:ring-0
+                active:bg-c-secondary active:shadow-lg
                 transition
                 duration-300
                 ease-in-out"

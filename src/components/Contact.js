@@ -12,17 +12,17 @@ export default function Contact() {
       <SectionTitle text="Skontaktuj się z nami!" />
       <div className="w-[90%] m-auto flex flex-row md:flex-row flex-wrap justify-around items-center mt-16 gap-8 lg:gap-0 mb-4">
         <div class="font-lato font-light flex flex-col justify-start w-full md:w-1/2 lg:w-[25%] gap-4">
-          <span class="flex gap-4 items-center hover:text-c-blue-1  transition duration-300 ease-in-out">
+          <span class="flex gap-4 items-center hover:text-c-primary  transition duration-300 ease-in-out">
             <BsTelephoneFill /> +48 608 458 768
           </span>
-          <span class="flex gap-4 items-center hover:text-c-blue-1 transition duration-300 ease-in-out">
-            <AiOutlineMail /> <a href="mailto:example@gmail.com">example@gmail.com</a>
+          <span class="flex gap-4 items-center hover:text-c-primary transition duration-300 ease-in-out">
+            <AiOutlineMail /> <a href="mailto:dartojab@gmail.com">dartojab@gmail.com</a>
           </span>
-          <span class="flex gap-4 items-center hover:text-c-blue-1 transition duration-300 ease-in-out">
+          <span class="flex gap-4 items-center hover:text-c-primary transition duration-300 ease-in-out">
             <SiGooglemaps />
             <a href="https://goo.gl/maps/4o295GCDQsrM6adDA">Lokalizacja</a>
           </span>
-          <span class="flex gap-4 items-center hover:text-c-blue-1 transition duration-300 ease-in-out">
+          <span class="flex gap-4 items-center hover:text-c-primary transition duration-300 ease-in-out">
             <SiOpenstreetmap />
             Jabłonka 84, 13-100 Natać Wielka
           </span>
@@ -34,7 +34,7 @@ export default function Contact() {
       </div>
 
     </div>
-    <div class="bg-c-blue-1 text-c-blue-3 font-lato text-base m-auto italic h-[10vh] bottom-0 w-full text-center flex  flex-col justify-center items-center">
+    <div class="border-t-2 bg-c-third-2 text-c-secondary font-lato text-base m-auto italic h-[10vh] bottom-0 w-full text-center flex  flex-col justify-center items-center">
       <p>Copyright {new Date().getFullYear()} by Karina Miernik</p>
     </div>
     </>

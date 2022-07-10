@@ -124,7 +124,7 @@ export default function Form(props) {
             class="w-full flex justify-center
                 px-6
                 py-2.5
-                bg-c-blue-1
+                bg-c-primary
                 text-white
                 font-lato
                 items-end
@@ -133,11 +133,10 @@ export default function Form(props) {
                 text-base
                 leading-tight
                 uppercase
-                rounded
                 shadow-md
-                hover:bg-c-blue-2 hover:shadow-lg
-                focus:bg-c-blue-2 focus:shadow-lg focus:outline-none focus:ring-0
-                active:bg-c-blue-2 active:shadow-lg
+                hover:bg-c-secondary hover:shadow-lg
+                focus:bg-c-secondary focus:shadow-lg focus:outline-none focus:ring-0
+                active:bg-c-secondary active:shadow-lg
                 transition
                 duration-150
                 ease-in-out"

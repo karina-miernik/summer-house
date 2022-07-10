@@ -1,26 +1,26 @@
 import React from 'react';
-export default function AreaModalBody({ index, handleOnNext }) {
+export default function AreaModalBody({ index }) {
   const activities = [
     {
-      text: 'Zbiornik posiada 5 wysp, których największa ma powierzchnię około 4ha. Dno jest muliste, miejscami piaszczyste i kamienisto-piaszczyste. W płytkich partiach wody zarośnięte roślinnością. Jezioro jest dobrze dostępne praktycznie ze wszystkich stron. Bardzo dobry dostęp w okolicznych miejscowościach: Wikno, Jabłonka, Natać Wielka, Natać Mała. Brzegi są wysokie, miejscami niskie i płaskie. Najbliższe otoczenie to lasy iglaste i zabudowania okolicznych miejscowości. Bezpośrednio nad brzegami dominuje olcha z niewielkim udziałem brzozy i wierzby. Wokół brzegów, pas roślinności szuwarowej o szerokości od kilku do kilkunastu metrów. Dominuje trzcina oraz pałka wąskolistna i szerokolistna. Występuje tu leszcz, krąp, ukleja oraz inne gatunki ryb w mniejszym stopniu.',
+      text: 'Jezioro posiada posiada 5 wysp, których największa ma powierzchnię około 4ha. Dno jest muliste, miejscami piaszczyste i kamienisto-piaszczyste. W płytkich partiach wody zarośnięte roślinnością. Jezioro jest dobrze dostępne praktycznie ze wszystkich stron. Bardzo dobry dostęp w okolicznych miejscowościach: Wikno, Jabłonka, Natać Wielka, Natać Mała. \n Najbliższe plaże: plaża w Jabłonce - ok.2 km, plaża w Nataci Małej - ok.5 km, plaża w Wiknie - ok.4 km',
       title: 'Plażowanie',
       image:
         'beach.jpeg'
     },
     {
-      text: "Szlak Wokół Omulewa - poprowadzi nas dookoła jeziora Omulew, częsciowo po drogach gruntowych, częsciowo po drogach asfaltowych lub utwardzonych. Przebiega przez cztery wsie turystyczne, dzięki czemu jest łatwo dostępny. Szlak jest dwustronny i zaprojektowany w formie pętli, dlatego też można z niego korzystać z każdego punktu i w dowolną stronę a po przebyciu całej trasy doprowadzi do miejsca startu z drugiej strony. Na trasie warto zwrócić uwagę przede wszystkim na piękne widoki i niezanieczyszczone srodowisko przyrodnicze. Po drodze szlak zbliża się do brzegu jeziora Omulew oraz Trzcinowego, można tam znaleźć miejsca, gdzie da się wygodnie zatrzymać na odpoczynek lub nawet kąpiel w jeziorze. Na trasie szlaku są bardzo niewielkie przewyższenia, dochodzące do zaledwie kilku metrów. Szlak należy zaliczyć do tras krótkich, nadający się na krótkie wycieczki zarówno rekreacyjne, rodzinne jak i treningowe. Jest on skomunikowany ze scieżką przyrodniczą w rezerwacie Koniuszanka II, szlakiem pieszym żółtym w okolicy Wikna oraz szlakiem spacerowym w okolicy Jabłonki, wszystkie te trzy szlaki dostępne są dla rowerów.",
+      text: "Szlak Wokół Omulewa prowadzi dookoła jeziora Omulew, częściowo po drogach gruntowych, częsciowo po drogach asfaltowych lub utwardzonych. Przebiega przez cztery wsie turystyczne, dzięki czemu jest łatwo dostępny. Szlak jest dwustronny i zaprojektowany w formie pętli, dlatego też można z niego korzystać z każdego punktu i w dowolną stronę a po przebyciu całej trasy doprowadzi do miejsca startu z drugiej strony. Na trasie warto zwrócić uwagę przede wszystkim na piękne widoki i niezanieczyszczone srodowisko przyrodnicze. Po drodze szlak zbliża się do brzegu jeziora Omulew oraz Trzcinowego, można tam znaleźć miejsca, gdzie da się wygodnie zatrzymać na odpoczynek lub nawet kąpiel w jeziorze. Na trasie szlaku są bardzo niewielkie przewyższenia, dochodzące do zaledwie kilku metrów. Szlak należy zaliczyć do tras krótkich, nadający się na krótkie wycieczki zarówno rekreacyjne, rodzinne jak i treningowe. Jest on skomunikowany ze scieżką przyrodniczą w rezerwacie Koniuszanka II, szlakiem pieszym żółtym w okolicy Wikna oraz szlakiem spacerowym w okolicy Jabłonki, wszystkie te trzy szlaki dostępne są dla rowerów.",
       title: 'Trasy turystyczne',
       image:
         'forest.jpeg'
     },
     {
-      text: 'Puszcza Napiwodzko-Ramucka (1130 km2) to pozostałość dawnej Puszczy Galindzkiej. Obszar położony między Olsztynem, Szczytnem a Nidzicą to nieprzebyte lasy z licznym starodrzewem, ciekawe zjawiska przyrodnicze (sufozja, erozja wsteczna), rezerwaty przyrody, dziewicze rzeki i jeziora. Puszcza Napiwodzko-Ramucka to także rzadkie drapieżniki – wilki i rysie oraz liczne łasicowate. Ten potężny kompleks leśny w sierpniu roku 1914 był areną zmagań tzw. bitwy tannenberskiej. Piękna przyroda i wielka historia zaprasza do serca puszczy! Atrakcje na trasie: Rezerwat przyrody Koniuszanka II – ścieżka dydaktyczna Chroni malowniczy przełom rzeki Koniuszanka oraz lasy występujące na terenie kompleksu – w rezerwacie rośnie około 80 pomników przyrody, w tym przepiękne daglezje i Dąb Cesarza Wilhelma.',
+      text: 'Puszcza Napiwodzko-Ramucka (1130 km2) to pozostałość dawnej Puszczy Galindzkiej. Jest to idealne miejsce na wycieczki rowerowe. Warto wybrać się szlakiem rowerowym dookoła jeziora Omulew. W pobliżu znajdują się również takie atrakcje jak aleja 600-letnich dębów (Wikno - 4km), żeremia bobrów (Wikno - 4km), skansen i manufaktura i huta szkła (Olsztynek 33km), Garncarska Wioska (Kamionka - 26km k/Nidzicy), zamki w Nidzicy i Olsztynie',
       title: 'Trasy rowerowe',
       image:
         'bike.jpeg'
     },
     {
-      text: 'Dla miłośników sportów wodnych i wędkarstwa swoje uroki odkrywa jezioro Omulew, którego tajemnice opisała K.Siesicka w swojej książce dla młodzieży „Jezioro Osobliwości”. Warto opłynąć jego tajemnicze brzegi i wyspy, aby następnie rozpocząć kajakiem spływ rzeką Omulwią, która wpływa do Narwii tuż pod Ostrołęką czy też zapolować na dorodną rybkę: sandacza, szczupaka, okonia, lina czy choćby krasnopiórkę. Wędkarze bez problemu zaopatrzą się też w niezbędne akcesoria wędkarskie: robaki, spławiki, zanęty.',
+      text: 'Dla miłośników sportów wodnych i wędkarstwa swoje uroki odkrywa jezioro Omulew. Warto opłynąć jego tajemnicze brzegi i wyspy, aby następnie rozpocząć kajakiem spływ rzeką Omulwią. Jest to idelane miejsce dla wędkarzy. Spotkac tu można takie ryby jak okonie, a w płytszych rejonach jeziora płocie, ukleje, krąpie, liny, czy węgorze',
       title: 'Sporty wodne',
       image:
         'sport.jpeg'
@@ -54,7 +54,8 @@ export default function AreaModalBody({ index, handleOnNext }) {
                 })}
               </div>
             </div>
-            <div className="flex flex-col w-full lg:w-[45%] m-auto text-lg font-lato font-light">
+            <div 
+            className="flex flex-col w-full lg:w-[45%] m-auto text-lg font-lato font-light">
               {index === 0
                 ? activities[0].text
                 : index === 1

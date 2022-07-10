@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <div
       class={`${
-        scrollTop ? 'bg-c-blue-4  shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
+        scrollTop ? 'bg-c-third  shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
       } h-[10vh] flex flex-row w-full  text-white transition duration-100 ease-in-out fixed top-0 z-30 uppercase justify-end py-4`}
     >
       <ul class="hidden md:flex tracking-wider capitalize font-lato text-base items-center w-[80%] justify-around">
@@ -41,7 +41,7 @@ export default function Header() {
 
         <div
           className={
-            isNavOpen ? 'flex absolute left-0 top-0 h-screen w-screen bg-c-blue-4 flex-col items-center' : 'hidden'
+            isNavOpen ? 'flex absolute left-0 top-0 h-screen w-screen bg-c-third flex-col items-center' : 'hidden'
           }
         >
           <div className="absolute top-0 right-0 p-4 cursor-pointer" onClick={() => setIsNavOpen(false)}>

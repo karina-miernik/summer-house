@@ -19,10 +19,13 @@ module.exports = {
       colors : {
         'c-gray-1': '#343434',
         'c-gray-2': '#767676',
-        'c-blue-1':'#314149',
-        'c-blue-2': '#405661',
-        'c-blue-3': '#526D7A',
-        'c-blue-4': 'rgba(49, 65, 73, 0.95)',
+        'c-blue': '#C1DFF0',
+        
+        'c-primary': '#C59130',
+        'c-secondary': '#DBB46B',
+        'c-third': 'rgba(49, 65, 73, .95)',
+        'c-third-2':'rgb(49, 65, 73)',
+
         'c-purple-1': '#B884B2',
         'c-green-1': '#667e76',
         'c-green-2': 'rgba(102,126,118,0.95)', 

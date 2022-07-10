@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 export default function Links  ({handleOnClose}) {
   return (
     <>
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="home"
@@ -17,7 +17,7 @@ export default function Links  ({handleOnClose}) {
             Strona Główna
           </Link>
         </li>
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="about"
@@ -30,7 +30,7 @@ export default function Links  ({handleOnClose}) {
             O nas
           </Link>
         </li>
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="services"
@@ -43,7 +43,7 @@ export default function Links  ({handleOnClose}) {
             Udogodnienia
           </Link>
         </li>
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="offer"
@@ -57,7 +57,7 @@ export default function Links  ({handleOnClose}) {
           </Link>
         </li>
 
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="gallery"
@@ -70,7 +70,7 @@ export default function Links  ({handleOnClose}) {
             Galeria
           </Link>
         </li>
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="area"
@@ -83,7 +83,7 @@ export default function Links  ({handleOnClose}) {
             Okolica
           </Link>
         </li>
-        <li class="transition hover:text-c-pink-1 ease-in-out duration-300 cursor-pointer">
+        <li class="transition hover:text-c-secondary ease-in-out duration-300 cursor-pointer">
           <Link
             activeClass="active"
             to="contact"

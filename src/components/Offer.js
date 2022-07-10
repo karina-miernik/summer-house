@@ -9,7 +9,7 @@ export default function Offer() {
         style={{ backgroundImage: "url('offer.jpeg')" }}
       >
         <div class="bg-white text-black p-4 md:p-8 w-[80%] md:w-[60%] flex flex-col text-[14px] md:text-base justify-center items-center m-auto">
-          <div class="border-t-2 border-c-blue-1 w-[10%] m-0"></div>
+          <div class="border-t-2 border-c-third-2 w-[10%] m-0"></div>
           <SectionTitle text="Oferta" />
           <div id="carouselDarkVariant" class="carousel slide relative  carousel-dark" data-bs-ride="carousel">
             <div class="carousel-indicators relative right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
@@ -34,26 +34,28 @@ export default function Offer() {
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner relative w-full overflow-hidden  h-[200px]">
+            <div class="carousel-inner relative w-full overflow-hidden  h-[200px] text-lg">
               <div class="carousel-item active relative float-left w-full">
                 <div>
-                  <p>Cena 400-420/domek</p>
-                  <p>Polecamy zarezerwować z wyprzedzeniem, na następny rok - zniżka 5%. </p>
+                  <p>Cena  <strong>400-420/domek</strong></p>
+                  <p>Przy rezerwacji z wyprzedzeniem, na następny rok - zniżka 5%. </p>
                   <p>W cenę wliczona jest opłata klimatyczna</p>
-                  <p>
-                    Gwarancją rezerwacji jest wpłata zadatku po uzgodnieniu telefonicznym, w wysokości 20% opłaty za
-                    cały pobyt, który należy wpłacić w ciągu 7 dni.
-                  </p>
                 </div>
               </div>
               <div class="carousel-item relative float-left w-full">
                 <div>
-                  <p>Dostawki we własnym zakresie, powyżej 5 osób płatne dodatkowo 20zł/osoba </p>
+                  <p>Powyżej 5 osób dostawki we własnym zakresie</p>
+                  <p>płatne dodatkowo 20zł/osoba </p>
                 </div>
               </div>
               <div class="carousel-item relative float-left w-full">
                 <div>
                   <p>Minimalny czas pobytu 5 dób</p>
+                  <p>
+                     Rezerwacja po wpłacie zadatku 
+                  </p>
+                  <p>Zadatek - 20% opłaty</p>
+                     <p> należy wpłacić w ciągu 7 dni</p>
                 </div>
               </div>
             </div>
