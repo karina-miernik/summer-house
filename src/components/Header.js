@@ -25,11 +25,11 @@ export default function Header() {
         scrollTop ? 'bg-c-third  shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
       } h-[10vh] flex flex-row w-full  text-white transition duration-100 ease-in-out fixed top-0 z-30 uppercase justify-end py-4`}
     >
-      <ul class="hidden md:flex tracking-wider capitalize font-lato text-[18px] items-center w-[80%] justify-around">
+      <ul class="hidden lg:flex tracking-wider capitalize font-lato text-[18px] items-center w-[80%] justify-around">
         <Links />
       </ul>
 
-      <div className="flex md:hidden items-center">
+      <div className="flex lg:hidden items-center">
         <div
           className="space-y-2 px-4 py-0 cursor-pointer"
           onClick={() => setIsNavOpen((prev) => !prev)} 
@@ -58,7 +58,7 @@ export default function Header() {
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </div>
-          <ul className="h-full w-full text-white capitalize font-lato text-[32px]l md:text-base flex flex-col items-center justify-center gap-4">
+          <ul className="h-full w-full text-white capitalize font-lato text-[32px]l lg:text-base flex flex-col items-center justify-center gap-4">
             <Links handleOnClose={() => setIsNavOpen(false)}/>
           </ul>
         </div>

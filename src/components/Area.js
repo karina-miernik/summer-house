@@ -42,7 +42,7 @@ export default function Area() {
     else setModal(NaN);
   };
   return (
-    <div class="w-[90%] min-h-[90vh] mx-auto my-26 flex flex-col">
+    <div class="w-[90%] h-auto mx-auto flex flex-col">
       <SectionTitle text="Poznaj okolicę" />
       <div class="flex flex-col md:flex-row flex-wrap w-full justify-center items-center gap-1 mt-16">
         {activities.map((activity, index) => {
@@ -59,7 +59,7 @@ export default function Area() {
                   class="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
                   style={{ backgroundPosition: '50%' }}
                 >
-                  <img class="max-w-[280px] md:max-w-lg h-full" src={activity.image} alt="activity" />
+                  <img class="max-w-[280px] lg:max-w-lg h-full" src={activity.image} alt="activity" />
                   <div
                     onClick={(e) => setModal(index)}
                     class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/30  hover:bg-black/60 transition duration-300 ease-in-out">
@@ -67,7 +67,7 @@ export default function Area() {
                       id={`activity${index}`}
                       class="cursor-pointer group flex flex-col  justify-center items-c enter h-full first-letter"
                     >
-                      <p class="relative text-white font-bold uppercase font-lato tracking-widest text-2xl md:text-[30px] text-center justify-center mb-0 flex">
+                      <p class="relative text-white font-bold uppercase font-lato tracking-widest text-2xl lg:text-[30px] text-center justify-center mb-0 flex">
                         {activity.title}
                       </p>
                     </div>

@@ -34,15 +34,15 @@ export default function Gallery() {
   };
 
   return (
-    <div class="w-[90%] md:w-[60%] md:min-h-[90vh] mx-auto my-26 flex flex-col">
+    <div class="w-[90%] lg:w-[60%] lg:min-h-[90vh] mx-auto  flex flex-col">
       <SectionTitle text="Galeria" />
       <section class="overflow-hidden text-gray-700 mt-16">
         <div class="container mx-auto">
-          <div class="flex flex-wrap m-1 md:-m-2">
+          <div class="flex flex-wrap m-1 lg:-m-2">
             {galleries.map((gallery, index) => {
               return (
                 <div
-                  class="w-1/2 md:w-1/3 p-1 md:p-2 cursor-pointer"
+                  class="w-1/2 lg:w-1/3 p-1 lg:p-2 cursor-pointer"
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop1"
                   onClick={(e) => setModal(index)}

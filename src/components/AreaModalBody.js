@@ -28,7 +28,7 @@ export default function AreaModalBody({ index }) {
   ];
   return (
     <>
-        <div class="flex flex-col w-[80%] md:w-[90%] m-auto h-full">
+        <div class="flex flex-col w-[80%] lg:w-[90%] m-auto h-full">
         <div className="uppercase font-lato font-light tracking-widest flex flex-row w-full text-[42px] h-[10%] text-center justify-center mb-16">
             {index === 0
               ? activities[0].title
@@ -40,7 +40,7 @@ export default function AreaModalBody({ index }) {
               ? activities[3].title
               : ''}
           </div>
-          <div class="flex h-[90%] md:flex-row gap-16 lg:gap-0 flex-wrap">
+          <div class="flex h-[90%] lg:flex-row gap-16 lg:gap-0 flex-wrap">
             <div class="flex flex-col w-full lg:w-[45%] m-auto" data-interval="false">
               <div class="w-full overflow-hidden">
                 {activities.map((activity, i) => {

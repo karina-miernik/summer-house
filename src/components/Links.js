@@ -23,7 +23,7 @@ export default function Links  ({handleOnClose}) {
             to="about"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-20}
             onClick= {handleOnClose}
             duration={500}
           >

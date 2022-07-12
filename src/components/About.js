@@ -3,13 +3,13 @@ import SectionTitle from './SectionTitle';
 
 export default function About(props) {
   return (
-    <div class="w-[90%] md:w-[60%] h-auto mx-auto my-32 flex flex-col ">
+    <div class="w-[90%] lg:w-[60%] h-auto mx-auto flex flex-col ">
       <div
-        class="text-base flex min-h-[80vh] font-lato text-center font-light leading-[32px] font-italic bg-cover bg-no-repeat bg-center bg-fixed mx-auto"
+        class="text-base flex items-center min-h-[80vh] font-lato text-center font-light leading-[32px] font-italic bg-cover bg-no-repeat bg-center bg-fixed mx-auto"
         style={{ backgroundImage: "url('forest.jpg')" }}
       >
-        <div class="bg-white text-black p-4 md:p-8 w-[80%] md:w-[60%] m-auto flex flex-col text-[14px] md:text-base">
-          <div class="border-t-2 border-c-third-2 w-[10%] m-auto"></div>
+        <div class="bg-white m-auto h-fit text-black p-4 lg:p-8 w-[90%] lg:w-[60%] mx-auto mt-8 mb-8 lg:mt-0 md-mb-0 flex flex-col text-[14px] lg:text-base">
+          <div class="border-t-2 border-c-third-2 w-[10%] mx-auto my-2"></div>
           <SectionTitle text="O nas" />
           Domek położony jest nad jeziorem Omulew na terenie puszczy Napiwodzko-Ramuckiej, na działce o powierzchni 9
           ar w cichej okolicy (kolonia). Położony jest na skraju miejscowości Jabłonka, której historia sięga XV wieku. 

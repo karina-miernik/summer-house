@@ -20,14 +20,14 @@ export default function Services  (props) {
     {title: "Psy", text: "akceptowane, koty nie", icon: <GiSittingDog size="40" class="mx-auto mb-4"/>},
   ]
   return (
-    <div class="w-[90%] md:w-[60%] md:h-[90vh] mx-auto my-26 flex flex-col break-words">
+    <div class="w-[90%] lg:w-[60%] lg:h-[90vh] mx-auto  flex flex-col break-words">
       <SectionTitle text="Udogodnienia"/>
-      <div class="flex flex-row flex-wrap w-full h-auto gap-8 items-start text-center justify-center md:flex-row mt-16 mb-8">
+      <div class="flex flex-row flex-wrap w-full h-auto gap-8 items-start text-center justify-center lg:flex-row mt-16 mb-8">
         {services.map((service, index) => {
           return (
             <div key={index} class="font-lato  flex flex-col  text-[20px] font-light w-[30%] lg:w-[25%] ">
             {service.icon}
-            <span class="font-lato font-[500] tracking-wider leading-[35px] text-[18px] md:text-[20px]">
+            <span class="font-lato font-[500] tracking-wider leading-[35px] text-[18px] lg:text-[20px]">
               {service.title}
             </span>
             <p class="italic text-[16px] tracking-wide font-lato font-[300]">{service.text}</p>

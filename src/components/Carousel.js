@@ -35,17 +35,17 @@ export default function Carousel() {
         {heros.map((hero, index) => {
           return (
             <div class={`carousel-item ${index === 0 ? 'active' : ''} relative float-left w-full`}>
-              <img src={hero.img} class="block w-full h-screen object-cover md:object-fill" alt={hero.alt} />
+              <img src={hero.img} class="block w-full h-screen object-cover lg:object-cover" alt={hero.alt} />
               <div
                 class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
                 style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}
               ></div>
               <div class="carousel-caption flex flex-col justify-evenly absolute top-[10%] text-center">
                 <div>
-                  <p class="uppercase text-2xl md:text-[70px] md:leading-[72px] font-vol font-bold tracking-wider text-white mb-8">
+                  <p class="uppercase text-2xl lg:text-[70px] lg:leading-[72px] font-vol font-bold tracking-wider text-white mb-8">
                     Domek z Widokiem
                   </p>
-                  <p class="font-lato text-lg md:text-[32px] font-normal md:font-light text-white mb-16">
+                  <p class="font-lato text-lg lg:text-[32px] font-normal lg:font-light text-white mb-16">
                     Jabłonka 84, 13-100 Nidzica
                   </p>
                   <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-90} duration={500}>
@@ -61,7 +61,7 @@ export default function Carousel() {
                 items-end
                 tracking-[3px]
                 font-medium
-                text-xs md:text-lg
+                text-xs lg:text-lg
                 leading-tight
                 uppercase
                 shadow-md

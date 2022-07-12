@@ -30,7 +30,7 @@ export default function GalleryModal({ index, handleOnNext }) {
   ];
   return (
     <>
-      <div class="flex flex-col w-[80%] md:w-[90%] m-auto h-full relative">
+      <div class="flex flex-col w-[80%] lg:w-[90%] m-auto h-full relative">
         <button
           type="button"
           class="absolute top-[-2%] z-10 right-[-1%] bg-white rounded-full btn-close box-content bg-[length:30%] w-3 h-3 p-1 text-white border-none opacity-100 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-95 hover:no-underline"
