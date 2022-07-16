@@ -9,7 +9,7 @@ export default function Carousel() {
       alt: 'hero1'
     },
     {
-      img: 'https://images.unsplash.com/uploads/1412259799414a71445bd/f7a44cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1669&q=80',
+      img: 'trees.jpg',
       alt: 'hero2'
     },
     {
