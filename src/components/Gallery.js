@@ -5,12 +5,12 @@ import { BsChevronLeft } from 'react-icons/bs';
 import GalleryModal from './GalleryModal';
 export default function Gallery() {
   const galleries = [
-    { image: 'bed.jpg' },
-    { image: 'bathroom.jpg' },
-    { image: 'domek.jpg' },
-    { image: 'boat.jpg' },
-    { image: 'balcony.jpg' },
-    { image: 'living.jpg' }
+    { image: 'bed.jpeg' },
+    { image: 'bathroom.jpeg' },
+    { image: 'domek.jpeg' },
+    { image: 'boat.jpeg' },
+    { image: 'balcony.jpeg' },
+    { image: 'living.jpeg' }
   ];
   const [modal, setModal] = useState(NaN);
 

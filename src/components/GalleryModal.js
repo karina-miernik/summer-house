@@ -5,27 +5,27 @@ export default function GalleryModal({ index, handleOnNext }) {
   const galleries = [
     {
       title: 'Plażowanie',
-      image: 'bed.jpg'
+      image: 'bed.jpeg'
     },
     {
       title: 'Trasy turystyczne',
-      image: 'bathroom.jpg'
+      image: 'bathroom.jpeg'
     },
     {
       title: 'Trasy rowerowe',
-      image: 'domek.jpg'
+      image: 'domek.jpeg'
     },
     {
       title: 'Sporty wodne',
-      image: 'boat.jpg'
+      image: 'boat.jpeg'
     },
     {
       title: 'Sporty wodne',
-      image: 'balcony.jpg'
+      image: 'balcony.jpeg'
     },
     {
       title: 'Sporty wodne',
-      image: 'living.jpg'
+      image: 'living.jpeg'
     }
   ];
   return (
