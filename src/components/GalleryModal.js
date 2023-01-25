@@ -28,6 +28,7 @@ export default function GalleryModal({ index, handleOnNext }) {
             image: "living.jpeg",
         },
     ];
+    console.log()
     return (
         <>
             <div class="flex flex-col w-[80%] lg:w-[80%] m-auto h-full relative gap-4">
