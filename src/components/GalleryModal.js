@@ -4,31 +4,28 @@ export default function GalleryModal({ index, handleOnNext }) {
     const [modal, setModal] = useState(index);
     const galleries = [
         {
-            title: "Plażowanie",
             image: "bed.jpeg",
         },
         {
-            title: "Trasy turystyczne",
             image: "bathroom.jpeg",
         },
         {
-            title: "Trasy rowerowe",
             image: "domek.jpeg",
         },
         {
-            title: "Sporty wodne",
             image: "boat.jpeg",
         },
         {
-            title: "Sporty wodne",
             image: "balcony.jpeg",
         },
         {
-            title: "Sporty wodne",
             image: "living.jpeg",
         },
+        {
+            image: "outside.jpg",
+        },
     ];
-    console.log()
+    console.log();
     return (
         <>
             <div class="flex flex-col w-[80%] lg:w-[80%] m-auto h-full relative gap-4">
