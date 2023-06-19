@@ -37,7 +37,8 @@ export default function Offer() {
             <div class="carousel-inner relative w-full overflow-hidden  h-[200px] text-lg">
               <div class="carousel-item active relative float-left w-full">
                 <div>
-                  <p>Cena  <strong>400-420/domek</strong></p>
+                  <p class="mb-4"><strong>Last minute: 18.07.2023 - 30.07.2023</strong></p>
+                  <p>Cena  <strong>420 zł / domek</strong></p>
                   <p>Przy rezerwacji z wyprzedzeniem, na następny rok - zniżka 5%. </p>
                   <p>W cenę wliczona jest opłata klimatyczna</p>
                 </div>
