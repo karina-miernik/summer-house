@@ -9,12 +9,12 @@ export default function Area() {
     {
       title: 'Plażowanie',
       image:
-        'beach.jpeg'
+        'beach.jpg'
     },
     {
       title: 'Trasy turystyczne',
       image:
-        'forest.jpeg'
+        'forest.jpg'
     },
     {
       title: 'Trasy rowerowe',
