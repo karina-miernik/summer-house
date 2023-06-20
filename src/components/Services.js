@@ -12,9 +12,9 @@ export default function Services  (props) {
   const services = [
     {title: "2 Duże Pokoje", text: "odpowiednio 40m2 i 20m2. W jednym TV i wyjście na taras", icon: <BiBed size="40" class="mx-auto mb-4"/>},
     {title: "Kuchnia", text: "w pełni wyposażona (lodówka, płyta, czajnik, naczynia, radio)", icon: <GiKitchenScale size="40" class="mx-auto mb-4"/>},
-    {title: "Łazienka i WC", text: "łazienka z prysznicem", icon: <BiBath size="40" class="mx-auto mb-4"/>},
+    {title: "Łazienka i WC", text: "2 x WC + prysznic", icon: <BiBath size="40" class="mx-auto mb-4"/>},
     {title: " Pościel", text: "zapewniona", icon: <GiPillow size="40" class="mx-auto mb-4"/>},
-    {title: "5 Osobowa Łódka", text: "wioślarska w cenie", icon: <GiBoatFishing size="40" class="mx-auto mb-4"/>},
+    {title: "5 Osobowa Łódka", text: "wioślarska w cenie (możliwość doczepienia silnika elektrycznego we własnym zakresiem), 3 kapoki", icon: <GiBoatFishing size="40" class="mx-auto mb-4"/>},
     {title: "Duża Posesja", text: "ogrodzona, z parkingiem, ogniskiem i możliwością grillowania", icon: <GiPineTree size="40" class="mx-auto mb-4"/>},
     {title: "Dostęp Do Jeziora", text: "i pomostu w odległości 50 m", icon: <GiBoatHorizon size="40" class="mx-auto mb-4"/>},
     {title: "Psy", text: "akceptowane, koty nie", icon: <GiSittingDog size="40" class="mx-auto mb-4"/>},
