@@ -3,7 +3,7 @@ import SectionTitle from './SectionTitle';
 
 export default function About(props) {
   return (
-    <div class="w-[90%] lg:w-[60%] h-auto mx-auto flex flex-col ">
+    <div class="w-full md:w-[90%] lg:w-[60%] h-auto mx-auto flex flex-col ">
       <div
         class="text-base flex items-center min-h-[80vh] font-lato text-center font-light leading-[32px] font-italic bg-cover bg-no-repeat bg-center bg-fixed mx-auto"
         style={{ backgroundImage: "url('forest-pond.jpeg')" }}
