@@ -3,14 +3,19 @@ export default function GalleryModal({ index, handleOnNext }) {
     // eslint-disable-next-line no-unused-vars
     const [modal, setModal] = useState(index);
     const galleries = [
+        { image: "chimney.jpg" },
+        { image: "living-room.jpg" },
         {
             image: "bed.jpeg",
         },
+        { image: "hall.jpg" },
+
         {
-            image: "bathroom.jpeg",
+            image: "bathroom.jpg",
         },
+        { image: "kitchen.jpg" },
         {
-            image: "domek.jpeg",
+            image: "plot.jpg",
         },
         {
             image: "boat.jpeg",
@@ -24,8 +29,11 @@ export default function GalleryModal({ index, handleOnNext }) {
         {
             image: "outside.jpg",
         },
+        {
+            image: "trees.jpg",
+        },
     ];
-    console.log();
+
     return (
         <>
             <div class="flex flex-col w-[80%] lg:w-[80%] m-auto h-full relative gap-4">

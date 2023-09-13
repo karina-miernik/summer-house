@@ -17,13 +17,13 @@ export default function AreaModalBody({ index }) {
       text: 'Puszcza Napiwodzko-Ramucka (1130 km2) to pozostałość dawnej Puszczy Galindzkiej. Jest to idealne miejsce na wycieczki rowerowe. Warto wybrać się szlakiem rowerowym dookoła jeziora Omulew. W pobliżu znajdują się również takie atrakcje jak aleja 600-letnich dębów (Wikno - 4km), żeremia bobrów (Wikno - 4km), skansen i manufaktura i huta szkła (Olsztynek 33km), Garncarska Wioska (Kamionka - 26km k/Nidzicy), zamki w Nidzicy i Olsztynie',
       title: 'Trasy rowerowe',
       image:
-        'bike.jpeg'
+        'bicycle.jpg'
     },
     {
       text: 'Dla miłośników sportów wodnych i wędkarstwa swoje uroki odkrywa jezioro Omulew. Warto opłynąć jego tajemnicze brzegi i wyspy, aby następnie rozpocząć kajakiem spływ rzeką Omulwią. Jest to idelane miejsce dla wędkarzy. Spotkać tu można takie ryby jak okonie, a w płytszych rejonach jeziora płocie, ukleje, krąpie, liny, czy węgorze',
       title: 'Sporty wodne',
       image:
-        'sport.jpeg'
+        'sport.jpg'
     }
   ];
   return (

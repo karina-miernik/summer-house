@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 export default function Carousel() {
   const heros = [
     {
-      img: 'landing.jpeg',
+      img: 'plot.jpg',
       alt: 'hero1'
     },
     {
@@ -13,7 +13,7 @@ export default function Carousel() {
       alt: 'hero2'
     },
     {
-      img: 'lake.jpeg',
+      img: 'lake.jpg',
       alt: 'hero3'
     }
   ];

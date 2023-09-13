@@ -5,13 +5,18 @@ import { BsChevronLeft } from "react-icons/bs";
 import GalleryModal from "./GalleryModal";
 export default function Gallery() {
     const galleries = [
+        { image: "chimney.jpg" },
+        { image: "living-room.jpg" },
         { image: "bed.jpeg" },
-        { image: "bathroom.jpeg" },
-        { image: "domek.jpeg" },
+        { image: "hall.jpg" },
+        { image: "bathroom.jpg" },
+        { image: "kitchen.jpg" },
+        { image: "plot.jpg" },
         { image: "boat.jpeg" },
         { image: "balcony.jpeg" },
         { image: "living.jpeg" },
         { image: "outside.jpg" },
+        { image: "trees.jpg" },
     ];
     const [modal, setModal] = useState(NaN);
 
@@ -22,17 +27,27 @@ export default function Gallery() {
         else if (modal === 3) setModal(4);
         else if (modal === 4) setModal(5);
         else if (modal === 5) setModal(6);
-        else if (modal === 6) setModal(0);
+        else if (modal === 6) setModal(7);
+        else if (modal === 7) setModal(8);
+        else if (modal === 8) setModal(9);
+        else if (modal === 9) setModal(10);
+        else if (modal === 10) setModal(11);
+        else if (modal === 11) setModal(0);
         else setModal(NaN);
     };
     const handleBtnPrev = () => {
-        if (modal === 0) setModal(6);
+        if (modal === 0) setModal(11);
         else if (modal === 1) setModal(0);
         else if (modal === 2) setModal(1);
         else if (modal === 3) setModal(2);
         else if (modal === 4) setModal(3);
         else if (modal === 5) setModal(4);
         else if (modal === 6) setModal(5);
+        else if (modal === 7) setModal(6);
+        else if (modal === 8) setModal(7);
+        else if (modal === 9) setModal(8);
+        else if (modal === 10) setModal(9);
+        else if (modal === 11) setModal(10);
         else setModal(NaN);
     };
 

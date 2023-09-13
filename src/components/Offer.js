@@ -6,7 +6,7 @@ export default function Offer() {
         <div class="w-full md:w-[90%] lg:w-[60%] h-auto mx-auto flex flex-col ">
             <div
                 class="w-full text-base flex items-center min-h-[80vh] font-lato text-center font-light leading-[32px] font-italic bg-cover lg:bg-contain bg-no-repeat bg-center bg-fixed mx-auto"
-                style={{ backgroundImage: "url('offer.jpeg')" }}
+                style={{ backgroundImage: "url('sunrise.jpg')" }}
             >
                 <div class="bg-white h-fit mx-auto mt-8 mb-8 lg:mt-0 md-mb-0 text-black p-4 lg:p-8 w-[80%] lg:w-[60%] flex flex-col text-[14px] lg:text-base justify-center items-center m-auto">
                     <div class="border-t-2 border-c-third-2 w-[10%] mx-auto my-2"></div>

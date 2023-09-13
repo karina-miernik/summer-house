@@ -19,12 +19,12 @@ export default function Area() {
     {
       title: 'Trasy rowerowe',
       image:
-        'bike.jpeg'
+        'bicycle.jpg'
     },
     {
       title: 'Sporty wodne',
       image:
-        'sport.jpeg'
+        'sport.jpg'
     }
   ];
   const handleBtnNext = () => {
@@ -59,10 +59,10 @@ export default function Area() {
                   class="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
                   style={{ backgroundPosition: '50%' }}
                 >
-                  <img class="max-w-[280px] lg:max-w-lg h-full" src={activity.image} alt="activity" />
+                  <img class="max-w-[280px] lg:max-w-md h-full" src={activity.image} alt="activity" />
                   <div
                     onClick={(e) => setModal(index)}
-                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/30  hover:bg-black/60 transition duration-300 ease-in-out">
+                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/10  hover:bg-black/40 transition duration-300 ease-in-out">
                     <div
                       id={`activity${index}`}
                       class="cursor-pointer group flex flex-col  justify-center items-c enter h-full first-letter"
