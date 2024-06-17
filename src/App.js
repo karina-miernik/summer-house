@@ -17,24 +17,24 @@ function App() {
         <Header />
         <Carousel />
       </div>
-      <div class="flex flex-col bg-gray-50">
-      <div id="about" class="my-32">
+      <div className="flex flex-col bg-gray-50">
+      <div id="about" className="my-32">
           <About />
         </div>
-        <div id="services" class="mb-32">
+        <div id="services" className="mb-32">
           <Services />
         </div>
-        <div id="offer" class="mb-32">
+        <div id="offer" className="mb-32">
           <Offer />
         </div>
       
-        <div id="gallery" class="mb-32">
+        <div id="gallery" className="mb-32">
           <Gallery />
         </div>
-        <div id="area" class="mb-32">
+        <div id="area" className="mb-32">
           <Area />
         </div>
-        <div id="contact" class="bg-c-green-3 mt-32">
+        <div id="contact" className="bg-c-green-3 mt-32">
           <Contact />
         </div>
         <div>

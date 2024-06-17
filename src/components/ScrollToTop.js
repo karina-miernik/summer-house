@@ -19,13 +19,13 @@ export default function ScrollToTop() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrollTop]);
   return (
-    <div class="fixed bottom-0 right-0">
-      <Link class="cursor-pointer" activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>
+    <div className="fixed bottom-0 right-0">
+      <Link className="cursor-pointer" activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={500}>
         <button
           type="button"
           data-mdb-ripple="true"
           data-mdb-ripple-color="light"
-          class={`${
+          className={`${
             scrollTop ? 'block opacity-100 transition duration-500 ease-in-out' : 'hidden opacity-0'
           } p-3 bg-c-primary text-white font-medium text-[32px]s leading-tight uppercase rounded-full shadow-md hover:bg-c-secondary hover:shadow-lg focus:bg-c-secondary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-c-secondary active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed`}
           id="btn-back-to-top"
@@ -34,7 +34,7 @@ export default function ScrollToTop() {
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
-            class="w-4 h-4"
+            className="w-4 h-4"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"

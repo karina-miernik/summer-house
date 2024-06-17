@@ -3,25 +3,22 @@ import SectionTitle from "./SectionTitle";
 
 export default function Offer() {
     return (
-        <div class="w-full md:w-[90%] lg:w-[60%] h-auto mx-auto flex flex-col ">
+        <div className="w-full md:w-[90%] lg:w-[60%] h-auto mx-auto flex flex-col ">
             <div
-                class="w-full text-base flex items-center min-h-[80vh] font-lato text-center font-light leading-[32px] font-italic bg-cover lg:bg-contain bg-no-repeat bg-center bg-fixed mx-auto"
-                style={{ backgroundImage: "url('sunrise.jpg')" }}
+                className="w-full text-base flex items-center min-h-[80vh] font-lato text-center font-light leading-[32px] font-italic bg-cover lg:bg-contain bg-no-repeat bg-center bg-fixed mx-auto"
+                style={{ backgroundImage: "url('sunrise.png')" }}
             >
-                <div class="bg-white h-fit mx-auto mt-8 mb-8 lg:mt-0 md-mb-0 text-black p-4 lg:p-8 w-[80%] lg:w-[60%] flex flex-col text-[14px] lg:text-base justify-center items-center m-auto">
-                    <div class="border-t-2 border-c-third-2 w-[10%] mx-auto my-2"></div>
+                <div className="bg-white h-fit mx-auto mt-8 mb-8 lg:mt-0 md-mb-0 text-black p-4 lg:p-8 w-[80%] lg:w-[60%] flex flex-col text-[14px] lg:text-base justify-center items-center m-auto">
+                    <div className="border-t-2 border-c-third-2 w-[10%] mx-auto my-2"></div>
                     <SectionTitle text="Oferta" />
                     <div
-                        id="carouselDarkVariant"
-                        class="carousel slide relative  carousel-dark"
-                        data-bs-ride="carousel"
                     >
-                        <div class="carousel-indicators relative right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                        {/* <div className="carousel-indicators relative right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                             <button
                                 type="button"
                                 data-bs-target="#carouselDarkVariant"
                                 data-bs-slide-to="0"
-                                class="active cursor-pointer"
+                                className="active cursor-pointer"
                                 aria-current="true"
                                 aria-label="Slide 1"
                             ></button>
@@ -43,11 +40,11 @@ export default function Offer() {
                                 data-bs-slide-to="3"
                                 aria-label="Slide 4"
                             ></button>
-                        </div>
-                        <div class="carousel-inner relative w-full overflow-hidden  h-[200px] text-lg">
-                            <div class="carousel-item active relative float-left w-full">
+                        </div> */}
+                        <div className="relative w-full overflow-hidden h-fit min-h-[200px] text:md md:text-lg">
+                            {/* <div className="carousel-item active relative float-left w-full">
                                 <div>
-                                    <p class="mb-4">
+                                    <p className="mb-4">
                                         <strong>
                                             Last minute: 18.07.2023 - 30.07.2023
                                         </strong>
@@ -58,41 +55,24 @@ export default function Offer() {
                                     </p>
                                     <p>
                                         Obecna cena{" "}
-                                        <strong class="line-through">452 zł / domek</strong>
+                                        <strong className="line-through">452 zł / domek</strong>
                                     </p>
                                 </div>
-                            </div>
-                            <div class="carousel-item relative float-left w-full">
-                                <div>
-                                    <p>
-                                        Cena <strong>425 zł / domek</strong>
-                                    </p>
-                                    <p>
-                                        Przy rezerwacji z wyprzedzeniem, na
-                                        następny rok - zniżka 5%.{" "}
-                                    </p>
-                                    <p>
-                                        W cenę wliczona jest opłata klimatyczna
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="carousel-item relative float-left w-full">
-                                <div>
-                                    <p>
-                                        Powyżej 5 osób dostawki we własnym
-                                        zakresie
-                                    </p>
-                                    <p>płatne dodatkowo 20zł/osoba </p>
-                                </div>
-                            </div>
-                            <div class="carousel-item relative float-left w-full">
-                                <div>
-                                    <p>Minimalny czas pobytu 5 dób</p>
-                                    <p>Rezerwacja po wpłacie zadatku</p>
-                                    <p>Zadatek - 20% opłaty</p>
-                                    <p> należy wpłacić w ciągu 7 dni</p>
-                                </div>
-                            </div>
+                            </div> */}
+                            <ul className="relative w-full text-left list-disc list-inside">
+                                <li>
+                                    Cena: <strong>450 zł za domek</strong> (w
+                                    cenę wliczona jest opłata klimatyczna)
+                                </li>
+                                <li>
+                                    {" "}
+                                    Przy rezerwacji z wyprzedzeniem, na następny
+                                    rok - zniżka 5%.
+                                </li>
+                                <li>Domek 5 osobowy</li>
+                                <li>Rezerwacja po wpłacie zadatku</li>
+                                <li>Zadatek wynosi 20% opłaty, należy opłacić w ciągu 7 dni</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

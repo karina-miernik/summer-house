@@ -21,17 +21,17 @@ export default function Header() {
   }, [scrollTop]);
   return (
     <div
-      class={`${
+      className={`${
         scrollTop ? 'bg-c-third  shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
       } h-[10vh] flex flex-row w-full  text-white transition duration-100 ease-in-out fixed top-0 z-30 uppercase justify-end py-4`}
     >
-      <ul class="hidden lg:flex tracking-wider capitalize font-lato text-[18px] items-center w-[80%] justify-around">
+      <ul className="hidden lg:flex tracking-wider capitalize font-lato text-[18px] items-center w-[80%] justify-around font-bold">
         <Links />
       </ul>
 
-      <div className="flex lg:hidden items-center">
+      <div className="flex items-center lg:hidden">
         <div
-          className="space-y-2 px-4 py-0 cursor-pointer"
+          className="px-4 py-0 space-y-2 cursor-pointer"
           onClick={() => setIsNavOpen((prev) => !prev)} 
         >
           <span className="block h-0.5 w-8 bg-white"></span>
@@ -46,7 +46,7 @@ export default function Header() {
         >
           <div className="absolute top-0 right-0 p-4 cursor-pointer" onClick={() => setIsNavOpen(false)}>
             <svg
-              className="h-8 w-8 text-white"
+              className="w-8 h-8 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

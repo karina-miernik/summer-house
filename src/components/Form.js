@@ -16,15 +16,15 @@ export default function Form(props) {
     );
   };
   return (
-    <div class="block w-full lg:w-[35%] md:w-1/2">
-      <form class="flex justify-between flex-col h-auto lg:h-[400px]" ref={form} onSubmit={handleOnSubmit}>
-        <div class="flex flex-col">
-          <div class="form-group mb-6">
+    <div className="block w-full lg:w-[35%] md:w-1/2">
+      <form className="flex justify-between flex-col h-auto lg:h-[400px]" ref={form} onSubmit={handleOnSubmit}>
+        <div className="flex flex-col">
+          <div className="form-group mb-6">
             <input
               placeholder="Imię"
               type="name"
               name="name"
-              class="        
+              className="        
                 w-full
                 px-3
                 py-1.5
@@ -43,11 +43,11 @@ export default function Form(props) {
               id="name"
             />
           </div>
-          <div class="form-group mb-6">
+          <div className="form-group mb-6">
             <input
               type="email"
               name="email"
-              class="  
+              className="  
             w-full
             px-3
             py-1.5
@@ -67,11 +67,11 @@ export default function Form(props) {
               placeholder="Email"
             />
           </div>
-          <div class="form-group mb-6">
+          <div className="form-group mb-6">
             <input
               type="text"
               name="subject"
-              class="         
+              className="         
             w-full
             px-3
             py-1.5
@@ -92,12 +92,12 @@ export default function Form(props) {
               placeholder="Temat"
             />
           </div>
-          <div class="form-group mb-6">
+          <div className="form-group mb-6">
             <textarea
               rows="3"
               type="text"
               name="message"
-              class="
+              className="
             w-full
             px-3
             py-1.5
@@ -121,7 +121,7 @@ export default function Form(props) {
         <div className="flex">
           <button
             type="submit"
-            class="w-full flex justify-center
+            className="w-full flex justify-center
                 px-6
                 py-2.5
                 bg-c-primary
