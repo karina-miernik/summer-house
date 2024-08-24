@@ -5,25 +5,25 @@ import { Link } from "react-scroll";
 export default function Carousel() {
     const heros = [
         {
-            img: "plot.png",
+            img: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724525240/image_f5yqs8.png",
             alt: "hero1",
         },
         {
-            img: "trees.jpeg",
+            img: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724526584/image_5_-min_vmidqe.png",
             alt: "hero2",
         },
         {
-            img: "lake.jpg",
+            img: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724526796/image_1_-min_coydwe.png",
             alt: "hero3",
         },
     ];
     return (
         <div
             id="carouselExampleCrossfade"
-            className="carousel slide carousel-fade relative"
+            className="relative carousel slide carousel-fade"
             data-bs-ride="carousel"
         >
-            <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-center p-0 mb-4 carousel-indicators">
                 <button
                     data-bs-target="#carouselExampleCrossfade"
                     data-bs-slide-to="0"
@@ -43,7 +43,7 @@ export default function Carousel() {
                 ></button>
             </div>
 
-            <div className="carousel-inner relative w-full overflow-hidden">
+            <div className="relative w-full overflow-hidden carousel-inner">
                 {heros.map((hero, index) => {
                     return (
                         <div
@@ -54,11 +54,11 @@ export default function Carousel() {
                         >
                             <img
                                 src={hero.img}
-                                className="block w-full h-screen object-cover"
+                                className="block object-cover w-full h-screen"
                                 alt={hero.alt}
                             />
                             <div
-                                className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                                className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden bg-fixed"
                                 style={{ backgroundColor: "rgba(0,0,0,0.3)" }}
                             ></div>
                             <div className="carousel-caption flex flex-col justify-evenly absolute top-[10%] text-center">
@@ -111,25 +111,25 @@ export default function Carousel() {
                 })}
             </div>
             <button
-                className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                className="absolute top-0 bottom-0 left-0 flex items-center justify-center p-0 text-center border-0 carousel-control-prev hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
                 type="button"
                 data-bs-target="#carouselExampleCrossfade"
                 data-bs-slide="prev"
             >
                 <span
-                    className="carousel-control-prev-icon inline-block bg-no-repeat"
+                    className="inline-block bg-no-repeat carousel-control-prev-icon"
                     aria-hidden="true"
                 ></span>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button
-                className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                className="absolute top-0 bottom-0 right-0 flex items-center justify-center p-0 text-center border-0 carousel-control-next hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
                 type="button"
                 data-bs-target="#carouselExampleCrossfade"
                 data-bs-slide="next"
             >
                 <span
-                    className="carousel-control-next-icon inline-block bg-no-repeat"
+                    className="inline-block bg-no-repeat carousel-control-next-icon"
                     aria-hidden="true"
                 ></span>
                 <span className="visually-hidden">Next</span>

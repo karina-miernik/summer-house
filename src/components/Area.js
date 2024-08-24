@@ -8,19 +8,19 @@ export default function Area() {
     const activities = [
         {
             title: "Plażowanie",
-            image: "beach.png",
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724528051/image_10_ejpfnt.png",
         },
         {
             title: "Trasy turystyczne",
-            image: "forest.png",
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724528050/image_14_m5pm15.png",
         },
         {
             title: "Trasy rowerowe",
-            image: "bicycle.png",
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724528050/image_11_rpzlyw.png",
         },
         {
             title: "Sporty wodne",
-            image: "sport.jpg",
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/v1724525233/image_6_s2ctmy.png",
         },
     ];
     const handleBtnNext = () => {
@@ -40,18 +40,18 @@ export default function Area() {
     return (
         <div className="w-[90%] h-auto mx-auto flex flex-col">
             <SectionTitle text="Poznaj okolicę" />
-            <div className="flex flex-col md:flex-row flex-wrap w-full justify-center items-center gap-1 mt-16">
+            <div className="flex flex-col flex-wrap items-center justify-center w-full gap-1 mt-16 md:flex-row">
                 {activities.map((activity, index) => {
                     return (
                         <div
                             type="button"
-                            className="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
+                            className="relative max-w-xs overflow-hidden bg-no-repeat bg-cover"
                             data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop"
                             key={index}
                         >
                             <div
-                                className="relative overflow-hidden bg-no-repeat bg-cover max-w-xs"
+                                className="relative max-w-xs overflow-hidden bg-no-repeat bg-cover"
                                 style={{ backgroundPosition: "50%" }}
                             >
                                 <img
@@ -61,11 +61,11 @@ export default function Area() {
                                 />
                                 <div
                                     onClick={(e) => setModal(index)}
-                                    className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black/10  hover:bg-black/40 transition duration-300 ease-in-out"
+                                    className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden transition duration-300 ease-in-out bg-fixed bg-black/10 hover:bg-black/40"
                                 >
                                     <div
                                         id={`activity${index}`}
-                                        className="cursor-pointer group flex flex-col  justify-center items-c enter h-full first-letter"
+                                        className="flex flex-col justify-center h-full cursor-pointer group items-c enter first-letter"
                                     >
                                         <p className="relative text-white font-bold uppercase font-lato tracking-widest text-2xl lg:text-[30px] text-center justify-center mb-0 flex">
                                             {activity.title}
@@ -77,7 +77,7 @@ export default function Area() {
                     );
                 })}
                 <div
-                    className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    className="fixed top-0 left-0 hidden w-full h-full overflow-x-hidden overflow-y-auto outline-none modal fade"
                     id="staticBackdrop"
                     data-bs-backdrop="static"
                     data-bs-keyboard="false"
@@ -87,16 +87,16 @@ export default function Area() {
                 >
                     <div className="modal-dialog relative w-auto pointer-events-none min-w-[100vw] m-0 min-h-[100vh]">
                         <div className="modal-content min-h-[100vh] border-none shadow-lg relative flex flex-col h-full w-full pointer-events-auto bg-white bg-clip-padding  outline-none text-current">
-                            <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 ">
+                            <div className="flex items-center justify-between flex-shrink-0 p-4 modal-header ">
                                 <button
                                     type="button"
-                                    className="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                                    className="box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 btn-close focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
                                     data-bs-dismiss="modal"
                                     aria-label="Close"
                                     onClick={() => setModal(NaN)}
                                 ></button>
                             </div>
-                            <div className="modal-body relative p-4 flex flex-row justify-around flex-wrap w-full items-center">
+                            <div className="relative flex flex-row flex-wrap items-center justify-around w-full p-4 modal-body">
                                 <div
                                     className="text-[30px] fixed top-[50%] left-0 cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline transition duration-300 ease-in-out"
                                     type="button"
