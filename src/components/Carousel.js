@@ -59,7 +59,7 @@ export default function Carousel() {
                             />
                             <div
                                 className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden bg-fixed"
-                                style={{ backgroundColor: "rgba(0,0,0,0.3)" }}
+                                style={{ backgroundColor: "rgba(0,0,0,0.45)" }}
                             ></div>
                             <div className="carousel-caption flex flex-col justify-evenly absolute top-[10%] text-center">
                                 <div>
