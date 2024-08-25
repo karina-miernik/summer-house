@@ -5,41 +5,45 @@ import { BsChevronLeft } from "react-icons/bs";
 import GalleryModal from "./GalleryModal";
 export default function Gallery() {
     const galleries = [
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528576/image_13_ryr3jr.png" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724527408/20240714_122254_icpgoz.jpg" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528638/image_16_-min_gcrawd.png" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528055/image_8_eibbdd.png" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528687/image_15_-min_pouoab.png" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724527403/20240714_123843_pcgaal.jpg" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528053/image_12_zoqps0.png" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724525231/image_9_nvyvzc.png" },
-        { image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724527408/20240714_123709_c8wkzq.jpg" },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528576/image_13_ryr3jr.png",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724527408/20240714_122254_icpgoz.jpg",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528638/image_16_-min_gcrawd.png",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528055/image_8_eibbdd.png",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528687/image_15_-min_pouoab.png",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724527403/20240714_123843_pcgaal.jpg",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724528053/image_12_zoqps0.png",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724525231/image_9_nvyvzc.png",
+        },
+        {
+            image: "https://res.cloudinary.com/dzuosnugg/image/upload/w_600/v1724527408/20240714_123709_c8wkzq.jpg",
+        },
     ];
-    const [modal, setModal] = useState(NaN);
+    const [modal, setModal] = useState(0);
 
-    const handleBtnNext = () => {
-        if (modal === 0) setModal(1);
-        else if (modal === 1) setModal(2);
-        else if (modal === 2) setModal(3);
-        else if (modal === 3) setModal(4);
-        else if (modal === 4) setModal(5);
-        else if (modal === 5) setModal(6);
-        else if (modal === 6) setModal(7);
-        else if (modal === 7) setModal(8);
-        else if (modal === 8) setModal(0);
-        else setModal(NaN);
+    const handleBtnNext = (e) => {
+        e.preventDefault();
+        if (modal === 8) setModal(0);
+        else setModal((prev) => prev + 1);
     };
-    const handleBtnPrev = () => {
+    const handleBtnPrev = (e) => {
+        e.preventDefault();
         if (modal === 0) setModal(8);
-        else if (modal === 1) setModal(0);
-        else if (modal === 2) setModal(1);
-        else if (modal === 3) setModal(2);
-        else if (modal === 4) setModal(3);
-        else if (modal === 5) setModal(4);
-        else if (modal === 6) setModal(5);
-        else if (modal === 7) setModal(6);
-        else if (modal === 8) setModal(0);
-        else setModal(NaN);
+        else setModal((prev) => prev - 1);
     };
 
     return (
@@ -60,22 +64,39 @@ export default function Gallery() {
                                     <img
                                         id={`gallery${index}`}
                                         alt={`gallery${index}`}
-                                        className="block object-cover object-center w-full h-full transition duration-300 ease-in-out opacity-100 hover:opacity-80"
+                                        className="block object-cover object-center w-full h-full transition duration-300 ease-in-out opacity-100 outline:none focus:none hover:opacity-80"
                                         src={gallery.image}
+                                        tabIndex="-1"
                                     />
                                 </div>
                             );
                         })}
                         <div
-                            className="modal fade fixed top-0 left-0 hidden w-[100%] h-full outline-none overflow-x-hidden overflow-y-auto p-0 cursor-pointer bg-black"
+                            className="modal fade fixed top-0 left-0 hidden w-[100%] h-full outline-none overflow-x-hidden overflow-y-hidden p-0 cursor-pointer bg-black"
                             id="exampleModal"
-                            // data-bs-backdrop="static"
+                            data-bs-backdrop="static"
                             data-bs-keyboard="false"
                             tabIndex="-1"
                             aria-labelledby="exampleModal"
                             aria-hidden="true"
                         >
-                            <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none min-w-[100%] min-h-[100vh] m-0">
+                            <div className="flex items-center justify-between flex-shrink-0 p-4 modal-header ">
+                                <button
+                                    type="button"
+                                    className="box-content self-end w-4 h-4 p-2 text-white border-none rounded-full opacity-100 btn-close focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                                    data-bs-dismiss="modal"
+                                    onClick={() => setModal(NaN)}
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 16 16"
+                                        fill="#fff"
+                                    >
+                                        <path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none min-w-[100%] h-full m-0">
                                 <div className="relative flex flex-col w-full h-full text-current border-none outline-none pointer-events-auto modal-content bg-clip-padding">
                                     <div className="modal-body relative flex flex-row justify-around flex-wrap items-center w-[100%] pt-0">
                                         <div
