@@ -10,14 +10,14 @@ import {GiPillow} from 'react-icons/gi'
 import {GiSittingDog} from 'react-icons/gi'
 export default function Services  (props) {
   const services = [
-    {title: "2 Duże Pokoje", text: "odpowiednio 40m2 i 20m2. W jednym TV i wyjście na taras", icon: <BiBed size="40" className="mx-auto mb-4"/>},
-    {title: "Kuchnia", text: "w pełni wyposażona (lodówka, płyta, czajnik, naczynia, radio)", icon: <GiKitchenScale size="40" className="mx-auto mb-4"/>},
-    {title: "Łazienka i WC", text: "2 x WC + prysznic", icon: <BiBath size="40" className="mx-auto mb-4"/>},
-    {title: " Pościel", text: "zapewniona", icon: <GiPillow size="40" className="mx-auto mb-4"/>},
-    {title: "5 Osobowa Łódka", text: "wioślarska w cenie (możliwość doczepienia silnika elektrycznego we własnym zakresiem), 3 kapoki", icon: <GiBoatFishing size="40" className="mx-auto mb-4"/>},
+    {title: "2 Duże Pokoje", text: "40m2 i 20m2. W jednym TV i wyjście na taras", icon: <BiBed size="40" className="mx-auto mb-4"/>},
+    {title: "Kuchnia", text: "w pełni wyposażona (lodówka, płyta, czajnik)", icon: <GiKitchenScale size="40" className="mx-auto mb-4"/>},
+    {title: "Łazienka i WC", text: "", icon: <BiBath size="40" className="mx-auto mb-4"/>},
+    {title: " Pościel", text: "", icon: <GiPillow size="40" className="mx-auto mb-4"/>},
+    {title: "5 Osobowa Łódka", text: "wioślarska, 3 kapoki", icon: <GiBoatFishing size="40" className="mx-auto mb-4"/>},
     {title: "Duża Posesja", text: "ogrodzona, z parkingiem, ogniskiem i możliwością grillowania", icon: <GiPineTree size="40" className="mx-auto mb-4"/>},
     {title: "Dostęp Do Jeziora", text: "i pomostu w odległości 50 m", icon: <GiBoatHorizon size="40" className="mx-auto mb-4"/>},
-    {title: "Psy", text: "akceptowane, koty nie", icon: <GiSittingDog size="40" className="mx-auto mb-4"/>},
+    {title: "Psy", text: "mile widziane", icon: <GiSittingDog size="40" className="mx-auto mb-4"/>},
   ]
   return (
     <div className="w-[90%] lg:w-[60%] lg:h-[90vh] mx-auto  flex flex-col break-words max-w-[1440px]">
