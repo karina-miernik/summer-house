@@ -43,7 +43,7 @@ export default function Carousel() {
                 ></button>
             </div>
 
-            <div className="relative w-full overflow-hidden carousel-inner">
+            <div className="relative w-full overflow-hidden carousel-inner ">
                 {heros.map((hero, index) => {
                     return (
                         <div
@@ -111,7 +111,7 @@ export default function Carousel() {
                 })}
             </div>
             <button
-                className="absolute top-0 bottom-0 left-0 flex items-center justify-center p-0 text-center border-0 carousel-control-prev hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
+                className="absolute left-0 flex items-center justify-center p-0 text-center border-0 top-1/2 h-fit carousel-control-prev hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
                 type="button"
                 data-bs-target="#carouselExampleCrossfade"
                 data-bs-slide="prev"
@@ -123,7 +123,7 @@ export default function Carousel() {
                 <span className="visually-hidden">Previous</span>
             </button>
             <button
-                className="absolute top-0 bottom-0 right-0 flex items-center justify-center p-0 text-center border-0 carousel-control-next hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
+                className="absolute right-0 flex items-center justify-center p-0 text-center border-0 top-1/2 h-fit carousel-control-next hover:outline-none hover:no-underline focus:outline-none focus:no-underline"
                 type="button"
                 data-bs-target="#carouselExampleCrossfade"
                 data-bs-slide="next"

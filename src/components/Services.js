@@ -20,9 +20,9 @@ export default function Services  (props) {
     {title: "Psy", text: "akceptowane, koty nie", icon: <GiSittingDog size="40" className="mx-auto mb-4"/>},
   ]
   return (
-    <div className="w-[90%] lg:w-[60%] lg:h-[90vh] mx-auto  flex flex-col break-words">
+    <div className="w-[90%] lg:w-[60%] lg:h-[90vh] mx-auto  flex flex-col break-words max-w-[1440px]">
       <SectionTitle text="Udogodnienia"/>
-      <div className="flex flex-row flex-wrap w-full h-auto gap-8 items-start text-center justify-center lg:flex-row mt-16 mb-8">
+      <div className="flex flex-row flex-wrap items-start justify-center w-full h-auto gap-8 mt-16 mb-8 text-center lg:flex-row">
         {services.map((service, index) => {
           return (
             <div key={index} className="font-lato  flex flex-col  text-[20px] font-light w-[30%] lg:w-[25%] ">

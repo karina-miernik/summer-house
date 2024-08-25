@@ -23,9 +23,9 @@ export default function Header() {
     <div
       className={`${
         scrollTop ? 'bg-c-third  shadow-md transition duration-300 ease-in-out' : 'bg-transparent'
-      } h-[10vh] flex flex-row w-full  text-white transition duration-100 ease-in-out fixed top-0 z-30 uppercase justify-end py-4`}
+      } h-[10vh] flex flex-row w-full  text-white transition duration-100 ease-in-out fixed top-0 z-30 uppercase justify-center py-4`}
     >
-      <ul className="hidden lg:flex tracking-wider capitalize font-lato text-[18px] items-center w-[80%] justify-around font-bold">
+      <ul className="hidden lg:flex tracking-wider capitalize font-lato text-[18px] items-center w-[80%] justify-around font-bold max-w-[1440px] mx-0">
         <Links />
       </ul>
 

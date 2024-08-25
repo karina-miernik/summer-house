@@ -38,7 +38,7 @@ export default function Area() {
         else setModal(NaN);
     };
     return (
-        <div className="w-[90%] h-auto mx-auto flex flex-col">
+        <div className="w-[90%] h-auto mx-auto flex flex-col max-w-[1440px]">
             <SectionTitle text="Poznaj okolicę" />
             <div className="flex flex-col flex-wrap items-center justify-center w-full gap-1 mt-16 md:flex-row">
                 {activities.map((activity, index) => {
@@ -96,7 +96,7 @@ export default function Area() {
                                     onClick={() => setModal(NaN)}
                                 ></button>
                             </div>
-                            <div className="relative flex flex-row flex-wrap items-center justify-around w-full p-4 modal-body">
+                            <div className="relative flex flex-row flex-wrap items-center justify-around w-full p-4 modal-body max-w-[1440px] mx-auto">
                                 <div
                                     className="text-[30px] fixed top-[50%] left-0 cursor-pointer items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline hover:text-gray-600 focus:outline-none focus:no-underline transition duration-300 ease-in-out"
                                     type="button"

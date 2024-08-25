@@ -24,7 +24,7 @@ export default function AreaModalBody({ index }) {
     ];
     return (
         <>
-            <div className="flex flex-col w-[80%] lg:w-[90%] m-auto h-full">
+            <div className="flex flex-col w-[80%] lg:w-[90%] m-auto h-full max-w-[1440px]">
                 <div className="uppercase font-lato font-light tracking-widest flex flex-row w-full text-[42px] h-[10%] text-center justify-center mb-16">
                     {index === 0
                         ? activities[0].title

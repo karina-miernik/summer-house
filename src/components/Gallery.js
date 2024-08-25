@@ -43,7 +43,7 @@ export default function Gallery() {
     };
 
     return (
-        <div className="w-[90%] lg:w-[60%] lg:min-h-[90vh] mx-auto  flex flex-col">
+        <div className="w-[90%] lg:w-[60%] lg:min-h-[90vh] mx-auto flex flex-col">
             <SectionTitle text="Galeria" />
             <section className="mt-16 overflow-hidden text-gray-700">
                 <div className="container mx-auto">
@@ -67,7 +67,7 @@ export default function Gallery() {
                             );
                         })}
                         <div
-                            className="modal fade fixed top-0 left-0 hidden w-[100%] h-full outline-none overflow-x-hidden overflow-y-auto p-0 cursor-pointer"
+                            className="modal fade fixed top-0 left-0 hidden w-[100%] h-full outline-none overflow-x-hidden overflow-y-auto p-0 cursor-pointer bg-black"
                             id="exampleModal"
                             // data-bs-backdrop="static"
                             data-bs-keyboard="false"
