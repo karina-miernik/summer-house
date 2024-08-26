@@ -5,7 +5,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { SiGooglemaps } from "react-icons/si";
 import { SiOpenstreetmap } from "react-icons/si";
-import { NavLink } from "react-router-dom";
+
 export default function Contact() {
     return (
         <>
@@ -19,9 +19,9 @@ export default function Contact() {
                         </span>
                         <span className="flex items-center gap-4 transition duration-300 ease-in-out hover:text-c-primary">
                             <AiOutlineMail />{" "}
-                            <NavLink to="mailto:dartojab@gmail.com">
+                            <a href="mailto:dartojab@gmail.com">
                                 dartojab@gmail.com
-                            </NavLink>
+                            </a>
                         </span>
                         <span className="flex items-center gap-4 transition duration-300 ease-in-out hover:text-c-primary">
                             <SiGooglemaps />
