@@ -1,6 +1,5 @@
 import React from "react";
 import ArrowDown from "./ArrowDown";
-import { Link } from "react-scroll";
 
 export default function Carousel() {
     const heros = [
@@ -69,13 +68,11 @@ export default function Carousel() {
                                     <p className="font-lato text-lg lg:text-[32px] font-normal lg:font-light text-white mb-16">
                                         Jabłonka 84, 13-100 Nidzica
                                     </p>
-                                    <Link
-                                        activeClass="active"
-                                        to="contact"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-90}
-                                        duration={500}
+
+                                    <a
+                                        href="mailto:domek.z.widokiem@gmail.com?subject=Domek z widokiem: rezerwacja terminu"
+                                        target="_blank"
+                                        rel="noreferrer"
                                     >
                                         <button
                                             type="submit"
@@ -102,7 +99,7 @@ export default function Carousel() {
                                         >
                                             Napisz do nas!
                                         </button>
-                                    </Link>
+                                    </a>
                                 </div>
                                 <ArrowDown />
                             </div>
