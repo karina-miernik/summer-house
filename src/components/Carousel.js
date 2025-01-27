@@ -70,7 +70,7 @@ export default function Carousel() {
                                     </p>
 
                                     <a
-                                        href="mailto:domek.z.widokiem@gmail.com?subject=Domek z widokiem: rezerwacja terminu"
+                                        href="mailto:domek.z.widokiem84@gmail.com?subject=Domek z widokiem: rezerwacja terminu"
                                         target="_blank"
                                         rel="noreferrer"
                                     >

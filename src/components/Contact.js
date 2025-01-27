@@ -20,11 +20,11 @@ export default function Contact() {
                         <span className="flex items-center gap-4 transition duration-300 ease-in-out hover:text-c-primary">
                             <AiOutlineMail />{" "}
                             <a
-                                href="mailto:domek.z.widokiem@gmail.com?subject=Domek z widokiem: rezerwacja terminu"
+                                href="mailto:domek.z.widokiem84@gmail.com?subject=Domek z widokiem: rezerwacja terminu"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                domek.z.widokiem@gmail.com
+                                domek.z.widokiem84@gmail.com
                             </a>
                         </span>
                         <span className="flex items-center gap-4 transition duration-300 ease-in-out hover:text-c-primary">
